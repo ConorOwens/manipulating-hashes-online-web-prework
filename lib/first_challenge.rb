@@ -16,7 +16,7 @@ def first_challenge
 contacts.map do |person, data|
   data.map do |attribute, value|
     if attribute == :favorite_icecream_flavors
-      attribute.delete_if {|value| value == strawberry}
+      value.delete_if {|flavor| flavor == strawberry}
     end
   end
 end
